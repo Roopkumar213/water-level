@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Health Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>💧 Water Health Checker</h1>
+    <p>Enter your observation or pH value to check water quality.</p>
+    
+    <input type="number" id="phInput" step="0.1" placeholder="Enter pH value (0 - 14)">
+    <button id="predictBtn">Predict</button>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
